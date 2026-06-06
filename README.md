@@ -34,7 +34,8 @@ hingga pemrograman server-side menggunakan PHP.
 
 ## Demo Live
 
-> Akan diisi setelah GitHub Pages aktif.
+[Klik di sini untuk melihat demo]
+(https://nasaazmi.github.io/ppw1-portofolio)
 
 ---
 
