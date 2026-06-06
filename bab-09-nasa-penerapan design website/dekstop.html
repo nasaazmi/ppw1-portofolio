@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nasa Azmi | Software Engineer</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- CSS Kita -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR — responsif otomatis pakai Bootstrap
+       Desktop : menu horizontal
+       Mobile  : hamburger → collapse
+       ============================================================ -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Nasa Azmi</a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-4" style="color:var(--text-dark)"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav gap-1 ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       Desktop : teks kiri | foto kanan (2 kolom Bootstrap)
+       Mobile  : foto bulat tengah atas | teks | CTA full width
+       ============================================================ -->
+  <section id="hero">
+    <div class="container">
+
+      <!-- Foto bulat — HANYA tampil di mobile (disembunyikan via CSS) -->
+      <div class="hero-photo-mobile">
+        <div class="photo-circle">
+          <img src="image.png" alt="Nasa Azmi">
+        </div>
+      </div>
+
+      <div class="row align-items-center g-4">
+
+        <!-- Kolom teks -->
+        <div class="col-12 col-lg-6">
+          <h1>Hi, I'm <em>Nasa Azmi</em><br>a ~ software engineer</h1>
+          <p class="subtitle">I develop products that people love to use and remember.</p>
+
+          <!-- Tombol: inline di desktop, full width di mobile -->
+          <div class="hero-btns d-flex gap-2 flex-wrap">
+            <a href="#contact" class="btn-hire">Hire Me</a>
+            <a href="#" class="btn-resume">Resume</a>
+          </div>
+
+          <!-- Trusted -->
+          <div class="trusted-row">
+            <div class="trusted-avatars">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="user" class="trusted-avatar">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg"   alt="user" class="trusted-avatar">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="user" class="trusted-avatar">
+              <img src="https://randomuser.me/api/portraits/men/75.jpg"   alt="user" class="trusted-avatar">
+            </div>
+            <span class="trusted-label">Trusted by over <strong>2 million</strong> people worldwide</span>
+          </div>
+        </div>
+
+        <!-- Kolom foto — HANYA tampil di desktop (disembunyikan via CSS) -->
+        <div class="col-12 col-lg-6">
+          <div class="hero-img-wrap">
+            <img src="image.png" alt="Nasa Azmi" class="hero-img-desktop">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERTISE
+       Desktop : grid 3 kolom
+       Mobile  : grid 2 kolom (Bootstrap col-6)
+       ============================================================ -->
+  <section id="expertise">
+    <div class="container">
+      <h2 class="section-title">My Expertise</h2>
+      <div class="row g-3">
+
+        <div class="col-6 col-md-4">
+          <div class="expertise-card">
+            <div class="icon-box"><i class="bi bi-vector-pen"></i></div>
+            <h6>Figma</h6>
+            <p>UI/UX Design, Prototyping, Wireframing, and creating modern user interface layouts.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="expertise-card">
+            <div class="icon-box"><i class="bi bi-code-slash"></i></div>
+            <h6>HTML 5</h6>
+            <p>Building structured web pages using semantic markup and modern web standards.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="expertise-card">
+            <div class="icon-box"><i class="bi bi-braces"></i></div>
+            <h6>CSS3</h6>
+            <p>Styling web pages with responsive layouts, Flexbox, and basic animations.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="expertise-card">
+            <div class="icon-box"><i class="bi bi-terminal"></i></div>
+            <h6>Python</h6>
+            <p>Basic programming, problem solving, and developing simple scripts and applications.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="expertise-card">
+            <div class="icon-box"><i class="bi bi-cup-hot"></i></div>
+            <h6>Java</h6>
+            <p>Object-oriented programming concepts and developing basic applications.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="expertise-card">
+            <div class="icon-box"><i class="bi bi-scissors"></i></div>
+            <h6>CapCut</h6>
+            <p>Video editing, creating visual content, and producing simple multimedia projects.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE
+       Desktop : grid 3 kolom (.exp-grid-wrap)
+       Mobile  : scroll horizontal (.exp-scroll-wrap)
+       ============================================================ -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">My Experience</h2>
+
+      <!-- DESKTOP: grid biasa -->
+      <div class="row g-3 exp-grid-wrap">
+
+        <div class="col-6 col-md-4">
+          <div class="exp-card">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Liga TRPL" class="exp-img">
+            <div class="exp-body"><h6>Liga TRPL 2025</h6><p>Staff of Public Relations and Publication</p></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="exp-card">
+            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80" alt="TED 2025" class="exp-img">
+            <div class="exp-body"><h6>TED 2025</h6><p>Staff of Public Relations and Publication</p></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="exp-card">
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=600&q=80" alt="Sekolah Alam UGM" class="exp-img">
+            <div class="exp-body"><h6>Sekolah Alam UGM</h6><p>Staff of Public Relations and Publication</p></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="exp-card">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Assets UGM" class="exp-img">
+            <div class="exp-body"><h6>Assets UGM</h6><p>Staff of Public Relations</p></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="exp-card">
+            <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=600&q=80" alt="KOMATIK UGM" class="exp-img">
+            <div class="exp-body"><h6>KOMATIK UGM</h6><p>Staff of Public Relations and Publication</p></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="exp-card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80" alt="Castle Academy" class="exp-img">
+            <div class="exp-body"><h6>Castle Academy</h6><p>Social Media Admin</p></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MOBILE: scroll horizontal -->
+      <div class="scroll-hint"><i class="bi bi-arrow-right"></i> Geser untuk melihat lebih banyak</div>
+      <div class="exp-scroll-wrap">
+        <div class="exp-scroll-inner">
+
+          <div class="exp-card">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=80" alt="Liga TRPL" class="exp-img">
+            <div class="exp-body"><h6>Liga TRPL 2025</h6><p>Staff of PR & Publication</p></div>
+          </div>
+
+          <div class="exp-card">
+            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&q=80" alt="TED 2025" class="exp-img">
+            <div class="exp-body"><h6>TED 2025</h6><p>Staff of PR & Publication</p></div>
+          </div>
+
+          <div class="exp-card">
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=400&q=80" alt="Sekolah Alam UGM" class="exp-img">
+            <div class="exp-body"><h6>Sekolah Alam UGM</h6><p>Staff of PR & Publication</p></div>
+          </div>
+
+          <div class="exp-card">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80" alt="Assets UGM" class="exp-img">
+            <div class="exp-body"><h6>Assets UGM</h6><p>Staff of Public Relations</p></div>
+          </div>
+
+          <div class="exp-card">
+            <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=400&q=80" alt="KOMATIK UGM" class="exp-img">
+            <div class="exp-body"><h6>KOMATIK UGM</h6><p>Staff of PR & Publication</p></div>
+          </div>
+
+          <div class="exp-card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&q=80" alt="Castle Academy" class="exp-img">
+            <div class="exp-body"><h6>Castle Academy</h6><p>Social Media Admin</p></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+       Desktop : teks centered
+       Mobile  : foto bulat + teks + badges
+       ============================================================ -->
+  <section id="about">
+    <div class="container text-center">
+      <h2 class="section-title">About Me</h2>
+
+      <!-- Foto bulat — hanya tampil di mobile -->
+      <div class="about-photo-mobile">
+        <div class="photo-circle">
+          <img src="image.png" alt="Nasa Azmi">
+        </div>
+      </div>
+
+      <p class="about-desc mx-auto mb-4">
+        I am a software engineer who loves building digital products that are simple, functional,
+        and memorable. I enjoy working on UI/UX design and front-end development, turning ideas
+        into real, usable interfaces.
+      </p>
+      <div class="mt-3">
+        <span class="skill-badge">UI/UX Design</span>
+        <span class="skill-badge">Front-End Dev</span>
+        <span class="skill-badge">Figma</span>
+        <span class="skill-badge">HTML & CSS</span>
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">Java</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+       Desktop : 2 kolom (form | info)
+       Mobile  : 1 kolom (form → info)
+       ============================================================ -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="row g-4">
+
+        <div class="col-12 col-lg-6">
+          <div class="contact-card">
+            <h5>Send Me a Message</h5>
+            <div class="mb-3">
+              <label>Full Name</label>
+              <input type="text" class="form-control" placeholder="Albert Doe">
+            </div>
+            <div class="mb-3">
+              <label>Email Address</label>
+              <input type="email" class="form-control" placeholder="albertdoe@example.com">
+            </div>
+            <div class="mb-3">
+              <label>Subject</label>
+              <input type="text" class="form-control" placeholder="Project Inquiry">
+            </div>
+            <div class="mb-3">
+              <label>Message</label>
+              <textarea class="form-control" rows="4" placeholder="Tell me about something"></textarea>
+            </div>
+            <button class="btn-send" type="button">Send Message</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="info-card">
+            <h5>Contact Information</h5>
+            <div class="info-item">
+              <div class="info-icon"><i class="bi bi-geo-alt"></i></div>
+              <div class="info-text"><small>Location</small><span>Mojokerto, East Java</span></div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="bi bi-envelope"></i></div>
+              <div class="info-text"><small>Email</small><span>nasaazmis@gmail.com</span></div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="bi bi-telephone"></i></div>
+              <div class="info-text"><small>Phone</small><span>+62 82337454958</span></div>
+            </div>
+          </div>
+          <div class="follow-card">
+            <h6>Follow Me</h6>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       Desktop : copyright kiri | links kanan
+       Mobile  : stack vertikal center
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span>© 2026 Nasa Azmi. All rights reserved.</span>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTTOM NAVIGATION — hanya tampil di mobile via CSS
+       ============================================================ -->
+  <nav class="bottom-nav">
+    <a href="#hero" class="active" data-section="hero">
+      <i class="bi bi-house-fill"></i><span>Home</span>
+    </a>
+    <a href="#expertise" data-section="expertise">
+      <i class="bi bi-lightning-fill"></i><span>Skills</span>
+    </a>
+    <a href="#experience" data-section="experience">
+      <i class="bi bi-briefcase-fill"></i><span>Work</span>
+    </a>
+    <a href="#about" data-section="about">
+      <i class="bi bi-person-fill"></i><span>About</span>
+    </a>
+    <a href="#contact" data-section="contact">
+      <i class="bi bi-envelope-fill"></i><span>Contact</span>
+    </a>
+  </nav>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Active nav link saat scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const bottomLinks = document.querySelectorAll('.bottom-nav a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 100) current = sec.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+      });
+      bottomLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.dataset.section === current) link.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

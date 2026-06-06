@@ -1,0 +1,509 @@
+/* ============================================================
+   CSS VARIABLES — Color Palette (3 warna utama)
+   #111111 = Primary Dark
+   #EBEBEB = Background Light
+   #f0f0f0 = Card Background
+   ============================================================ */
+:root {
+  --bg-white: #FFFFFF;
+  --bg-gray: #EBEBEB;
+  --text-dark: #111111;
+  --text-muted: #666666;
+  --card-bg: #f0f0f0;
+  --border-color: #d0d0d0;
+  --font-main: 'Poppins', sans-serif;
+  --radius-card: 12px;
+  --radius-btn: 50px;
+}
+
+/* ============================================================
+   BASE
+   html  : latar abu-abu di luar frame HP
+   body  : frame HP lebar 390px, selalu di tengah
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background: #999;           /* abu-abu di luar frame */
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-dark);
+  background: var(--bg-white);
+  min-height: 100vh;
+  padding-bottom: 70px;       /* ruang untuk bottom nav */
+  overflow-x: hidden;
+
+  /* ── Kunci lebar 390px, tengah, shadow frame HP ── */
+  width: 390px;
+  max-width: 390px;
+  min-width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 60px rgba(0,0,0,0.35);
+}
+
+/* ============================================================
+   NAVBAR MOBILE
+   ============================================================ */
+.navbar {
+  background: var(--bg-white) !important;
+  border-bottom: 1px solid var(--border-color);
+  padding: 12px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-dark) !important;
+  text-decoration: none;
+}
+.navbar-toggler {
+  border: none;
+  padding: 4px 6px;
+  background: none;
+}
+.navbar-toggler:focus { box-shadow: none; }
+.navbar-toggler i { font-size: 1.6rem; color: var(--text-dark); }
+
+/* Dropdown menu mobile */
+.mobile-menu {
+  background: var(--bg-white);
+  border-bottom: 1px solid var(--border-color);
+  padding: 8px 0;
+  display: none;
+}
+.mobile-menu.open { display: block; }
+.mobile-menu a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+.mobile-menu a:last-child { border-bottom: none; }
+.mobile-menu a:active { background: #eee; }
+
+/* ============================================================
+   HERO MOBILE
+   Foto bulat di tengah atas → teks → CTA full width
+   ============================================================ */
+#hero {
+  padding: 24px 20px 32px;
+  background: linear-gradient(180deg, var(--bg-white) 0%, var(--bg-gray) 100%);
+}
+/* Wrapper lingkaran — yang jadi border bulat */
+.hero-photo-wrap {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid var(--text-dark);
+  overflow: hidden;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Foto di dalamnya — diperbesar agar tidak ada space */
+.hero-img-mobile {
+  width: 160%;
+  height: 160%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  flex-shrink: 0;
+}
+#hero h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 8px;
+}
+#hero h1 em {
+  font-style: italic;
+  font-weight: 600;
+}
+#hero .subtitle {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* CTA — full width stack di mobile */
+.hero-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.btn-hire {
+  background: var(--text-dark);
+  color: #fff;
+  border-radius: var(--radius-btn);
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 11px 22px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  transition: background 0.2s;
+}
+.btn-hire:hover { background: #333; color: #fff; }
+.btn-resume {
+  background: transparent;
+  color: var(--text-dark);
+  border: 1.5px solid var(--text-dark);
+  border-radius: var(--radius-btn);
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 11px 22px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-resume:hover { background: var(--text-dark); color: #fff; }
+
+/* Trusted avatars */
+.trusted-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.trusted-avatars { display: flex; }
+.trusted-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--bg-white);
+  object-fit: cover;
+  margin-left: -8px;
+}
+.trusted-avatar:first-child { margin-left: 0; }
+.trusted-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ============================================================
+   SECTION SHARED
+   ============================================================ */
+section { padding: 36px 20px; }
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+/* ============================================================
+   EXPERTISE — 2 kolom
+   ============================================================ */
+#expertise { background: var(--bg-white); }
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.expertise-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-card);
+  padding: 16px;
+}
+.icon-box {
+  width: 40px;
+  height: 40px;
+  background: var(--text-dark);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.icon-box i { color: #fff; font-size: 1.1rem; }
+.expertise-card h6 {
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin-bottom: 4px;
+}
+.expertise-card p {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   EXPERIENCE — Scroll horizontal
+   ============================================================ */
+#experience { background: var(--bg-gray); }
+
+.exp-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.exp-scroll::-webkit-scrollbar { display: none; }
+
+.exp-card {
+  min-width: 200px;
+  background: var(--card-bg);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.exp-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+}
+.exp-body { padding: 10px 12px; }
+.exp-card h6 {
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 2px;
+}
+.exp-card p {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+.scroll-hint {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ============================================================
+   ABOUT — Foto bulat + teks + badges
+   ============================================================ */
+#about {
+  background: var(--bg-white);
+  text-align: center;
+}
+.about-photo-wrap {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--text-dark);
+  overflow: hidden;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-photo {
+  width: 160%;
+  height: 160%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  flex-shrink: 0;
+}
+.about-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.skill-badge {
+  display: inline-block;
+  background: var(--text-dark);
+  color: #fff;
+  border-radius: var(--radius-btn);
+  font-size: 0.72rem;
+  padding: 5px 14px;
+  margin: 3px 2px;
+  font-weight: 500;
+}
+
+/* ============================================================
+   CONTACT — 1 kolom
+   ============================================================ */
+#contact { background: var(--bg-gray); }
+
+.contact-card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.contact-card h5 {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+.contact-card label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+  display: block;
+}
+.contact-card .form-control {
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-family: var(--font-main);
+  font-size: 0.8rem;
+  padding: 9px 12px;
+  background: #fff;
+  color: var(--text-dark);
+}
+.contact-card .form-control::placeholder { color: #aaa; }
+.contact-card .form-control:focus {
+  border-color: #999;
+  box-shadow: none;
+}
+.btn-send {
+  background: var(--text-dark);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 0.88rem;
+  padding: 12px;
+  width: 100%;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.info-card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 12px;
+}
+.info-card h5 {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.info-item:last-child { margin-bottom: 0; }
+.info-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.info-icon i { font-size: 0.95rem; color: var(--text-dark); }
+.info-text small {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+.info-text span {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.follow-card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+.follow-card h6 {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+.social-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--text-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+/* ============================================================
+   FOOTER MOBILE — Stack vertikal
+   ============================================================ */
+footer {
+  background: var(--text-dark);
+  color: #aaa;
+  padding: 24px 20px;
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.78rem;
+}
+.footer-copy { font-size: 0.75rem; }
+
+/* ============================================================
+   BOTTOM NAVIGATION — Hanya di mobile, fixed di bawah
+   ============================================================ */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 390px;
+  background: var(--text-dark);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 14px;
+  z-index: 200;
+}
+.bottom-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.6rem;
+  transition: color 0.2s;
+}
+.bottom-nav a i { font-size: 1.2rem; }
+.bottom-nav a.active,
+.bottom-nav a:hover { color: #fff; }
