@@ -74,7 +74,6 @@ ppw1-portofolio/
 | 9 | Bab 10 | JavaScript | [bab-10](./bab-10-nasa-java-script) | Selesai |
 | 10 | Bab 11 | PHP Dasar | [bab-11](./bab-11-nasa-php) | Selesai |
 | 11 | Bab 12 | CRUD PHP | [bab-12](./bab-12-nasa-crud-php) | Selesai |
-| 12 | Bab 13 | *coming soon* | bab-13 | Belum |
 
 ---
 
