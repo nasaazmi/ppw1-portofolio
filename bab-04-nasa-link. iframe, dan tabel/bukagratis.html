@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        BUKA GRATIS!
+    </title>
+</head>
+
+<body>
+    <p>
+    <h1 align="center">BUKA BERSAMA!</h1>
+    <h3 align="center">Semarakkan ramadhan dengan berlomba lomba menebar kebaikan</h3>
+    <center> <img src="menu buka.webp" width="650" height="540"></center>
+    </p>
+    <fieldset>
+        <legend>
+            Data Diri:a
+        </legend>
+
+        <form action="#" method="post" enctype="text/plain">
+            <p>
+                Nama Lengkap: <input type="text" name="nama" placeholder="Masukkan nama Anda" size="20" maxlength="20">
+                <br><br>
+                Asal Instansi: <input type="text" name="asal_instansi" placeholder="Masukkan instansi Anda" size="20"
+                    maxlength="20">
+                <br><br>
+                Email: <input type="text" name="email" placeholder="Masukkan email Anda" size="20" maxlength="20">
+            </p>
+            <p>
+                Jenis Kelamin:
+                <br>
+                Pria<input type="radio" name="sex" value="pria"> <br>
+                Wanita<input type="radio" name="sex" value="wanita">
+            </p>
+            <script>
+                function hitungUmur() {
+                    var tahun = parseInt(document.getElementById('tahunLahir').value);
+                    var sekarang = new Date().getFullYear();
+                    if (tahun && tahun >= 1900 && tahun <= sekarang) {
+                        document.getElementById('hasilUmur').value = sekarang - tahun;
+                    } else {
+                        document.getElementById('hasilUmur').value = '-';
+                    }
+                }
+            </script>
+            <p>
+                Tahun Lahir: <input type="number" id="tahunLahir" name="tahun_lahir" placeholder="cth: 2000" min="1900"
+                    max="2025" size="10" oninput="hitungUmur()">
+                <br><br>
+                Umur kamu: <output id="hasilUmur">-</output> tahun
+            </p>
+
+            <p>
+                Kota Kamu:
+                <input type="text" list="kota" name="kota" placeholder="Ketik nama kota...">
+                <datalist id="kota" align="buttom">
+                    <option value="Jakarta">
+                    <option value="Surabaya">
+                    <option value="Bandung">
+                    <option value="Medan">
+                    <option value="Yogyakarta">
+                </datalist>
+            </p>
+            <p>
+                Pilih Menu buka Puasa:
+                <select name="menu">
+                    <optgroup label="Minuman">
+                        <option value="es_teh">Es Teh Manis</option>
+                        <option value="es_jeruk">Es Jeruk</option>
+                        <option value="kolak">Kolak</option>
+                    </optgroup>
+                    <optgroup label="Makanan">
+                        <option value="nasi_goreng">Nasi Goreng</option>
+                        <option value="soto">Soto Ayam</option>
+                        <option value="gado_gado">Gado-Gado</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>Syarat Mendapatkan buka gratis:
+                <br>
+                <input type="checkbox" name="syarat" value="islam"> Beragama Islam
+                <br>
+                <input type="checkbox" name="syarat" value="berpuasa"> Menjalankan kewajiban berpuasa
+            </p>
+            <p>Kritik dan Saran:
+                <br>
+                <textarea name="kritik_dan_saran" placeholder="Kritik dan saran anda sangat berharga bagi kami" rows="4"
+                    cols="58"></textarea>
+
+            </p>
+            <p> <img src="https://cdn0-production-images-kly.akamaized.net/wmYuygmxG_VLFQWR8Fj93FaZ9LI=/640x360/smart/filters:quality(75):strip_icc()/kly-media-production/medias/4556526/original/028516000_1693359960-thank-you-card-collage-concept_1_.jpg"
+                    weidth="350" height="200">
+            </p>
+
+            <p>
+                <input type="submit" value="Daftar Sekarang">
+                <input type="reset" value="Reset">
+            </p>
+        </form>
+    </fieldset>
+</body>
+
+</html>
