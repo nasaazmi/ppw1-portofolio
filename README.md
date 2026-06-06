@@ -80,9 +80,7 @@ ppw1-portofolio/
 
 ## Screenshot
 
-> Akan diisi setelah semua bab selesai.
-> Format: simpan gambar di folder `assets/screenshots/` lalu tambahkan:
-> `![Bab 03](./assets/screenshots/bab-03.png)`
+![Preview](./assets/screenshots/preview.png)
 
 ---
 
