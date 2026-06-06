@@ -64,17 +64,17 @@ ppw1-portofolio/
 
 | No | Bab | Topik | Folder | Status |
 |:--:|:---:|-------|--------|:------:|
-| 1 | Bab 02 | HTML Dasar | [bab-02](./bab-02-nasa-html-dasar) | Selesai |
-| 2 | Bab 03 | Link, Frame, dan Tabel | [bab-03](./bab-03-nasa-link-frame-dan-tabel) | Selesai |
-| 3 | Bab 04 | Link, iframe, dan Tabel | [bab-04](./bab-04-nasa-link-iframe-dan-tabel) | Selesai |
-| 4 | Bab 05 | Stylesheet CSS | [bab-05](./bab-05-nasa-stylesheet) | Selesai |
-| 5 | Bab 06 | Flexbox dan Responsive | [bab-06](./bab-06-nasa-flexbox-and-responsive) | Selesai |
-| 6 | Bab 07 | Stylesheet CSS Lanjutan | [bab-07](./bab-07-nasa-stylesheet2) | Selesai |
-| 7 | Bab 08 | Bootstrap | [bab-08](./bab-08-nasa-bootstrap) | Selesai |
-| 8 | Bab 09 | Penerapan Design Website | [bab-09](./bab-09-nasa-penerapan-design-website) | Selesai |
-| 9 | Bab 10 | JavaScript | [bab-10](./bab-10-nasa-java-script) | Selesai |
-| 10 | Bab 11 | PHP Dasar | [bab-11](./bab-11-nasa-php) | Selesai |
-| 11 | Bab 12 | CRUD PHP | [bab-12](./bab-12-nasa-crud-php) | Selesai |
+| 1  | Bab 02 | HTML Dasar               | [bab-02](./bab-02-nasa-dasar-html)                                        | Selesai |
+| 2  | Bab 03 | Link, Frame, dan Tabel   | [bab-03](./bab-03-nasa-link-frame-dan-tabel/index.html)                   | Selesai |
+| 3  | Bab 04 | Link, iframe, dan Tabel  | [bab-04](./bab-04-nasa-link-iframe-dan-tabel/bukagratis.html)             | Selesai |
+| 4  | Bab 05 | Stylesheet CSS           | [bab-05](./bab-05-nasa-stylesheet/style.html)                             | Selesai |
+| 5  | Bab 06 | Flexbox dan Responsive   | [bab-06](./bab-06-nasa-flexbox-and-responsive/index.html)                 | Selesai |
+| 6  | Bab 07 | Stylesheet CSS Lanjutan  | [bab-07](./bab-07-nasa-stylesheet2/STYLESHEET.html)                       | Selesai |
+| 7  | Bab 08 | Bootstrap                | [bab-08](./bab-08-nasa-bootstrap/dashboard.html)                          | Selesai |
+| 8  | Bab 09 | Penerapan Design Website | [bab-09](./bab-09-nasa-penerapan-design-website/dekstop.html)             | Selesai |
+| 9  | Bab 10 | JavaScript               | [bab-10](./bab-10-nasa-java-script/p101.html)                             | Selesai |
+| 10 | Bab 11 | PHP Dasar                | [bab-11](./bab-11-nasa-php/kalkulator.html)                               | Selesai |
+| 11 | Bab 12 | CRUD PHP                 | [bab-12](./bab-12-nasa-crud-php/index.php)                                | Selesai |
 
 ---
 
