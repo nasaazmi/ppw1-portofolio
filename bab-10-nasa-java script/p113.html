@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bab 11 No.3</title>
+</head>
+<body>
+
+<h2>Kalkulator Sederhana</h2>
+
+Bilangan ke-1 : <input type="number" id="bil1"><br><br>
+Bilangan ke-2 : <input type="number" id="bil2"><br><br>
+Operasi :
+<select id="operasi">
+    <option value="+">+ (Penjumlahan)</option>
+    <option value="-">- (Pengurangan)</option>
+    <option value="*">* (Perkalian)</option>
+    <option value="/">/ (Pembagian)</option>
+</select>
+<br><br>
+<button onclick="hitung()">Hitung</button>
+
+<p id="hasil"></p>
+
+<script>
+    function hitung() {
+        var bil1    = parseFloat(document.getElementById("bil1").value);
+        var bil2    = parseFloat(document.getElementById("bil2").value);
+        var operasi = document.getElementById("operasi").value;
+
+        if (isNaN(bil1) || isNaN(bil2)) {
+            document.getElementById("hasil").innerHTML = "<b>Masukkan kedua bilangan terlebih dahulu!</b>";
+            return;
+        }
+
+        var hasil;
+        if (operasi === "+") {
+            hasil = bil1 + bil2;
+        } else if (operasi === "-") {
+            hasil = bil1 - bil2;
+        } else if (operasi === "*") {
+            hasil = bil1 * bil2;
+        } else if (operasi === "/") {
+            if (bil2 === 0) {
+                document.getElementById("hasil").innerHTML = "<b>Tidak bisa dibagi dengan 0!</b>";
+                return;
+            }
+            hasil = bil1 / bil2;
+        }
+
+        document.getElementById("hasil").innerHTML =
+            bil1 + " " + operasi + " " + bil2 + " = <b>" + hasil + "</b>";
+    }
+</script>
+
+</body>
+</html>

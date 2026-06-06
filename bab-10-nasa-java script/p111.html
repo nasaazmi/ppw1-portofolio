@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bab 11 No.1</title>
+</head>
+<body>
+
+<h2>Perbandingan 2 Bilangan</h2>
+
+Bilangan ke-1 : <input type="number" id="bil1"><br><br>
+Bilangan ke-2 : <input type="number" id="bil2"><br><br>
+<button onclick="cek()">Cek Bilangan</button>
+
+<p id="hasil"></p>
+
+<script>
+    function cek() {
+        var bil1 = parseFloat(document.getElementById("bil1").value);
+        var bil2 = parseFloat(document.getElementById("bil2").value);
+
+        if (isNaN(bil1) || isNaN(bil2)) {
+            document.getElementById("hasil").innerHTML = "<b>Masukkan kedua bilangan terlebih dahulu!</b>";
+            return;
+        }
+
+        var hasil;
+        if (bil1 > bil2) {
+            hasil = "BILANGAN KE-1 LEBIH BESAR DARI BILANGAN KE-2";
+        } else if (bil1 < bil2) {
+            hasil = "BILANGAN KE-1 LEBIH KECIL DARI BILANGAN KE-2";
+        } else {
+            hasil = "BILANGAN KE-1 SAMA DENGAN BILANGAN KE-2";
+        }
+
+        document.getElementById("hasil").innerHTML =
+            "Bilangan ke-1 = " + bil1 + "<br>" +
+            "Bilangan ke-2 = " + bil2 + "<br>" +
+            "<b>" + hasil + "</b>";
+    }
+</script>
+
+</body>
+</html>

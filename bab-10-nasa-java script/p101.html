@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Bab 10 No.1</title>
+    <!-- EMBED: script ditulis langsung di HTML -->
+    <script>
+        function salamEmbed() {
+            alert("Halo dari JavaScript EMBED!");
+        }
+    </script>
+</head>
+<body>
+    <h2>Tugas Bab 10 No.1 - 3 Cara Penulisan JavaScript</h2>
+
+    <h3>1. Embed</h3>
+    <button onclick="salamEmbed()">Klik - Embed</button>
+
+    <h3>2. Inline</h3>
+    <!-- INLINE: javascript ditulis langsung di atribut -->
+    <button onclick="alert('Halo dari JavaScript INLINE!')">Klik - Inline</button>
+
+    <h3>3. Eksternal</h3>
+    <button onclick="salamEksternal()">Klik - Eksternal</button>
+
+    <!-- EKSTERNAL: memanggil file js terpisah -->
+    <script src="eksternal.js"></script>
+</body>
+</html>
