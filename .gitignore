@@ -1,0 +1,52 @@
+# ==============================
+# FILE KONFIGURASI DATABASE
+# ==============================
+koneksi.php
+config.php
+database.php
+db.php
+connection.php
+
+# ==============================
+# FILE ENVIRONMENT & SENSITIF
+# ==============================
+.env
+.env.local
+*.env
+
+# ==============================
+# FOLDER SISTEM OPERASI
+# ==============================
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Mac
+.DS_Store
+.AppleDouble
+
+# ==============================
+# FOLDER EDITOR / IDE
+# ==============================
+
+# VS Code
+.vscode/
+
+# JetBrains (PHPStorm, dll)
+.idea/
+
+# ==============================
+# FOLDER DEPENDENCIES
+# ==============================
+node_modules/
+vendor/
+
+# ==============================
+# FILE LOG & TEMPORARY
+# ==============================
+*.log
+*.tmp
+*.temp
+*.cache
