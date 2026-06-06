@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Membuat Web</title>
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box;}
+
+            nav {
+                background: black;
+                display: flex;
+                padding: 0 20px;
+            }
+            nav ul {
+                list-style: none;
+                display: flex;
+            }
+
+            nav ul li a{
+                color:bisque;
+                text-decoration: none;
+                display: block;
+                padding: 15px 20px;
+            }
+            
+            .wrapper {
+                display: flex;
+                min-height: 80vh;
+            }
+
+            aside {
+                width: 200px;
+                background: rgb(237, 48, 48);
+                padding: 20px;
+            }
+
+            main {
+                flex: 1;
+                padding: 20px;
+            }
+
+            footer {
+                background: rgb(252, 68, 68);
+                color:rgb;
+                text-align: center;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+      <nav>
+        <ul>
+            <li><a href="">Beranda</a></li>
+            <li><a href="">Tentang</a></li>
+            <li><a href="">Kontak</a></li>
+        </ul>
+      </nav> 
+      <div class="wrapper">
+        <aside>Menu Samping</aside>
+        <main>Konten Utama</main>
+      </div>
+      <footer>Footer &copy; 2025</footer>
+    </body>
+</html>

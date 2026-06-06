@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan Text CSS - Tugas Praktikum</title>
+        <style>
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f4f8;
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+
+            nav {
+                background-color: #34495e;
+                padding: 10px 20px;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin-right: 15px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+            main {
+                display: flex;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            article {
+                background-color: white;
+                border: 1px solid #ccc;
+                padding: 20px;
+                flex: 3;
+            }
+
+            aside {
+                background-color: #eaf0fb;
+                border: 1px solid #aac;
+                padding: 15px;
+                flex: 1;
+            }
+
+            footer {
+                background-color: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 12px;
+            }
+
+            .contoh-indent {
+                text-indent: 40px;
+                background-color: #fff3cd;
+                padding: 10px;
+                border-left: 4px solid orange;
+            }
+
+            .contoh-letter {
+                letter-spacing: 3px;
+                background-color: #d4edda;
+                padding: 10px;
+                border-left: 4px solid green;
+            }
+
+            .contoh-word {
+                word-spacing: 15px;
+                background-color: #d1ecf1;
+                padding: 10px;
+                border-left: 4px solid teal;
+            }
+
+            .contoh-lineheight {
+                line-height: 2.5;
+                background-color: #f8d7da;
+                padding: 10px;
+                border-left: 4px solid red;
+            }
+
+            .contoh-whitespace {
+                white-space: pre;
+                background-color: #e2d9f3;
+                padding: 10px;
+                border-left: 4px solid purple;
+                font-size: 14px;
+            }
+
+            h3 {
+                margin-top: 20px;
+                color: #2c3e50;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>Belajar Text CSS</h1>
+            <p>Halaman Latihan Praktikum Pemrograman Web</p>
+        </header>
+
+        <nav align="center">
+            <a href="#">Home</a>
+            <a href="#">Materi</a>
+            <a href="#">Tugas</a>
+            <a href="#">Kontak</a>
+        </nav>
+
+        <main>
+
+            <article>
+                <h2>Penerapan 5 Properti Text CSS</h2>
+
+                <h3>1. text-indent</h3>
+                <p class="contoh-indent">
+                    Ini adalah contoh text-indent. Baris pertama paragraf ini
+                    menjorok ke dalam sejauh 40px. Baris berikutnya tidak
+                    terpengaruh dan tetap rata kiri seperti biasa.
+                </p>
+
+                <h3>2. letter-spacing</h3>
+                <p class="contoh-letter">
+                    Ini contoh letter-spacing. Jarak antar huruf diperlebar menjadi 3px.
+                </p>
+
+                <h3>3. word-spacing</h3>
+                <p class="contoh-word">
+                    Ini contoh word-spacing. Jarak antar kata diperlebar menjadi 15px.
+                </p>
+
+                <h3>4. line-height</h3>
+                <p class="contoh-lineheight">
+                    Ini contoh line-height.<br>
+                    Baris kedua ada di sini.<br>
+                    Baris ketiga ada di sini.<br>
+                    Perhatikan jarak antar barisnya lebih lebar dari normal.
+                </p>
+
+                <h3>5. white-space</h3>
+                <p class="contoh-whitespace">Ini    contoh    white-space: pre.
+Spasi ganda    dan enter
+dipertahankan    oleh browser.</p>
+
+            </article>
+
+            <aside>
+                <h3>Catatan</h3>
+                <p>Lima properti yang dipelajari:</p>
+                <ul>
+                    <li>text-indent</li>
+                    <li>letter-spacing</li>
+                    <li>word-spacing</li>
+                    <li>line-height</li>
+                    <li>white-space</li>
+                </ul>
+            </aside>
+
+        </main>
+
+        <footer>
+            <p>Praktikum Pemrograman Web &copy; 2025</p>
+        </footer>
+
+    </body>
+</html>

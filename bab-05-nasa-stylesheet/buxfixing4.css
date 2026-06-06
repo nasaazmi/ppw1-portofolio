@@ -1,0 +1,24 @@
+<style>
+  .box1 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+  }
+
+  .box2 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    top: 100px;
+    left: 100px;
+    position: absolute;
+    z-index: 999;
+  }
+</style>
+
+<div class="box1"></div>
+<div class="box2"></div>
