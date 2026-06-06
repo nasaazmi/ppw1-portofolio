@@ -1,0 +1,65 @@
+/* tugas2.css — Formulir Pendaftaran · Pink · Biru · Putih */
+
+:root {
+  --pink: #f06292;
+  --pink-light: #fce4ec;
+  --blue: #4a90d9;
+  --blue-light: #e3f0fb;
+  --dark: #1c1c2e;
+  --muted: #7a7a9a;
+  --border: #f0e4ea;
+  --bg: #fdf6f9;
+  --white: #ffffff;
+}
+
+body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--dark); }
+a { text-decoration: none; color: var(--muted); font-size: .88rem; font-weight: 600; transition: color .2s; }
+a:hover { color: var(--pink); }
+
+/* NAVBAR */
+.top-nav { display: flex; justify-content: space-between; align-items: center;
+  background: var(--white); border-bottom: 1px solid var(--border);
+  padding: .9rem 2rem; position: sticky; top: 0; z-index: 99; }
+.brand { font-family: 'DM Serif Display', serif; font-size: 1.15rem; font-weight: 400; color: var(--dark); }
+.nav-active { color: var(--pink) !important; }
+
+/* FORM CARD */
+.form-wrap { max-width: 760px; margin: 0 auto; background: var(--white);
+  border-radius: 20px; border: 1px solid var(--border);
+  box-shadow: 0 4px 24px rgba(240,98,146,.08); overflow: hidden; }
+
+/* HEADER */
+.form-head { padding: 1.8rem 2.2rem 1.5rem;
+  background: linear-gradient(120deg, var(--pink) 0%, #f8a5c2 100%); color: var(--white); }
+.eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; opacity: .8; margin-bottom: .4rem; }
+.form-head h5 { font-family: 'DM Serif Display', serif; font-size: 1.3rem; font-weight: 400; margin-bottom: .3rem; }
+.sub { font-size: .82rem; opacity: .85; margin: 0; }
+
+/* FORM BODY */
+.form-body { padding: 2rem 2.2rem; }
+.group-label { font-size: .7rem; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--pink); margin-bottom: 1rem; }
+
+.form-label { font-size: .83rem; font-weight: 600; color: var(--dark); margin-bottom: .35rem; }
+.req { color: var(--pink); }
+.form-control, .form-select { font-size: .87rem; border-color: #f0e4ea;
+  border-radius: 10px; padding: .55rem 1rem; transition: border-color .2s, box-shadow .2s; }
+.form-control:focus, .form-select:focus {
+  border-color: var(--pink); box-shadow: 0 0 0 3px rgba(240,98,146,.12); }
+.form-text { font-size: .73rem; color: var(--muted); }
+hr { border-color: var(--border); }
+
+/* BUTTONS */
+.btn-save { background: var(--pink); color: var(--white); border: none;
+  border-radius: 50px; padding: .6rem 1.8rem; font-weight: 700; font-size: .87rem;
+  transition: background .2s, transform .15s; }
+.btn-save:hover { background: #e05580; transform: translateY(-2px); }
+.btn-reset { background: var(--white); color: var(--muted); border: 1px solid var(--border);
+  border-radius: 50px; padding: .6rem 1.6rem; font-weight: 600; font-size: .87rem;
+  transition: border-color .2s, color .2s; }
+.btn-reset:hover { border-color: var(--blue); color: var(--blue); }
+
+/* FOOTER */
+footer { background: linear-gradient(135deg, #fff6f9 0%, #f0f6ff 100%);
+  border-top: 1px solid var(--border); padding: 1.6rem 0; font-size: .8rem; color: var(--muted); margin-top: 2rem; }

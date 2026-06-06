@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Nilai — NASA AZMI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+  <link href="dashboard.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="top-nav">
+  <a class="brand" href="#">nasa azmi</a>
+  <div class="d-none d-md-flex gap-4">
+    <a href="tugas1.html">Beranda</a>
+    <a href="tugas2.html">Pendaftaran</a>
+    <a href="#" class="nav-active">Dashboard</a>
+    <a href="#">Kontak</a>
+  </div>
+</nav>
+
+<!-- PROFILE BANNER -->
+<div class="profile-banner">
+  <div class="container d-flex align-items-center gap-4 flex-wrap">
+    <img src="foto.jpeg" class="avatar" alt="NASA AZMI"
+      onerror="this.src='https://ui-avatars.com/api/?name=NASA+AZMI&background=f06292&color=fff&size=128'"/>
+    <div>
+      <p class="prodi-label">D4 Teknologi Rekayasa Perangkat Lunak · Sekolah Vokasi UGM</p>
+      <h4 class="profile-name">NASA AZMI SHOBIR</h4>
+      <p class="profile-nim">NIM: 25/558088/SV/26283 · Angkatan 2025</p>
+      <span class="badge-aktif">✓ Aktif</span>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="container mt-4">
+  <div class="row g-3 mb-4">
+    <div class="col-6 col-md-4">
+      <div class="stat-card">
+        <i class="bi bi-journal-bookmark stat-icon"></i>
+        <div class="stat-num">20</div>
+        <div class="stat-lbl">Total SKS</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="stat-card">
+        <i class="bi bi-star stat-icon"></i>
+        <div class="stat-num">3.82</div>
+        <div class="stat-lbl">IPK</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="stat-card">
+        <i class="bi bi-check2-circle stat-icon"></i>
+        <div class="stat-num">10</div>
+        <div class="stat-lbl">Mata Kuliah Lulus</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-wrap">
+    <div class="table-topbar">
+      <h6>Transkrip Nilai — Gasal 2025/2026</h6>
+      <span class="ips-chip">IPS: 3.82</span>
+    </div>
+    <div class="table-responsive">
+      <table class="table align-middle mb-0">
+        <thead>
+          <tr><th>No</th><th>Mata Kuliah</th><th class="text-center">SKS</th><th class="text-center">Nilai</th><th class="text-center">Nilai Angka</th><th class="text-center">Aksi</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Matematika Teknik<br><small class="kode">SVPL214102</small></td><td class="text-center">2</td><td class="text-center"><span class="badge bg-success">A</span></td><td class="text-center">4.00</td><td class="text-center"><button class="btn-detail" onclick="showModal('Matematika Teknik','SVPL214102',2,'A',4.00,8.00)">Detail</button></td></tr>
+          <tr><td>2</td><td>Pengantar Teknologi Informasi<br><small class="kode">SVPL214101</small></td><td class="text-center">2</td><td class="text-center"><span class="badge bg-success">A−</span></td><td class="text-center">3.75</td><td class="text-center"><button class="btn-detail" onclick="showModal('Pengantar Teknologi Informasi','SVPL214101',2,'A−',3.75,7.50)">Detail</button></td></tr>
+          <tr><td>3</td><td>Matematika Diskrit<br><small class="kode">SVPL214103</small></td><td class="text-center">2</td><td class="text-center"><span class="badge bg-success">A−</span></td><td class="text-center">3.75</td><td class="text-center"><button class="btn-detail" onclick="showModal('Matematika Diskrit','SVPL214103',2,'A−',3.75,7.50)">Detail</button></td></tr>
+          <tr><td>4</td><td>Bahasa Inggris 1<br><small class="kode">SVPL214104</small></td><td class="text-center">2</td><td class="text-center"><span class="badge bg-primary">A/B</span></td><td class="text-center">3.50</td><td class="text-center"><button class="btn-detail" onclick="showModal('Bahasa Inggris 1','SVPL214104',2,'A/B',3.50,7.00)">Detail</button></td></tr>
+          <tr><td>5</td><td>Praktikum TI dan Instalasi Komputer<br><small class="kode">SVPL214105</small></td><td class="text-center">2</td><td class="text-center"><span class="badge bg-success">A</span></td><td class="text-center">4.00</td><td class="text-center"><button class="btn-detail" onclick="showModal('Praktikum TI dan Instalasi Komputer','SVPL214105',2,'A',4.00,8.00)">Detail</button></td></tr>
+          <tr><td>6</td><td>Praktikum Pemrograman Komputer<br><small class="kode">SVPL214106</small></td><td class="text-center">2</td><td class="text-center"><span class="badge bg-success">A</span></td><td class="text-center">4.00</td><td class="text-center"><button class="btn-detail" onclick="showModal('Praktikum Pemrograman Komputer','SVPL214106',2,'A',4.00,8.00)">Detail</button></td></tr>
+          <tr><td>7</td><td>Algoritma dan Pemrograman<br><small class="kode">SVPL214107</small></td><td class="text-center">2</td><td class="text-center"><span class="badge bg-success">A−</span></td><td class="text-center">3.75</td><td class="text-center"><button class="btn-detail" onclick="showModal('Algoritma dan Pemrograman','SVPL214107',2,'A−',3.75,7.50)">Detail</button></td></tr>
+          <tr><td>8</td><td>Keselamatan dan Kesehatan Kerja<br><small class="kode">SVPL214108</small></td><td class="text-center">2</td><td class="text-center"><span class="badge bg-primary">A/B</span></td><td class="text-center">3.50</td><td class="text-center"><button class="btn-detail" onclick="showModal('Keselamatan dan Kesehatan Kerja','SVPL214108',2,'A/B',3.50,7.00)">Detail</button></td></tr>
+          <tr><td>9</td><td>Praktikum Desain Elementer<br><small class="kode">SVPL214109</small></td><td class="text-center">2</td><td class="text-center"><span class="badge bg-success">A</span></td><td class="text-center">4.00</td><td class="text-center"><button class="btn-detail" onclick="showModal('Praktikum Desain Elementer','SVPL214109',2,'A',4.00,8.00)">Detail</button></td></tr>
+          <tr><td>10</td><td>Bahasa Indonesia<br><small class="kode">SVPL214502</small></td><td class="text-center">2</td><td class="text-center"><span class="badge bg-success">A</span></td><td class="text-center">4.00</td><td class="text-center"><button class="btn-detail" onclick="showModal('Bahasa Indonesia','SVPL214502',2,'A',4.00,8.00)">Detail</button></td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="2" class="text-end fw-bold">Jumlah SKS</td><td class="text-center fw-bold">20</td><td colspan="2" class="text-end fw-bold">Total Nilai SKS</td><td class="text-center fw-bold">76.50</td></tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="detailModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-wrap">
+      <div class="modal-header modal-head">
+        <h6 class="modal-title" id="modalTitle">Detail Mata Kuliah</h6>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-4" id="modalBody"></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="text-center mb-0">© 2025 NASA AZMI SHOBIR · D4 TRPL · Universitas Gadjah Mada</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function showModal(mk, kode, sks, nilai, angka, nilaiSks) {
+  document.getElementById('modalTitle').textContent = mk;
+  document.getElementById('modalBody').innerHTML = `
+    <div class="text-center mb-4">
+      <span class="badge bg-success fs-5 px-4 py-2">${nilai}</span>
+      <p class="text-muted small mt-2">Nilai Akhir</p>
+    </div>
+    <div class="detail-row"><span>Kode MK</span><strong>${kode}</strong></div>
+    <div class="detail-row"><span>SKS</span><strong>${sks} SKS</strong></div>
+    <div class="detail-row"><span>Nilai Angka</span><strong>${angka.toFixed(2)}</strong></div>
+    <div class="detail-row"><span>Nilai SKS</span><strong>${nilaiSks.toFixed(2)}</strong></div>
+    <div class="detail-row"><span>Semester</span><strong>Gasal 2025/2026</strong></div>
+    <div class="detail-row"><span>Status</span><strong class="text-success">✓ Lulus</strong></div>`;
+  new bootstrap.Modal(document.getElementById('detailModal')).show();
+}
+</script>
+</body>
+</html>

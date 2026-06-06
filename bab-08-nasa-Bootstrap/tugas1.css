@@ -1,0 +1,68 @@
+/* ============================================
+   style.css — Nasa Azmi Portfolio
+   Palette: Pink · Blue · White
+   ============================================ */
+
+:root {
+  --pink: #f06292;
+  --pink-light: #fce4ec;
+  --blue: #4a90d9;
+  --blue-light: #e3f0fb;
+  --dark: #1c1c2e;
+  --muted: #7a7a9a;
+  --white: #ffffff;
+  --soft-bg: #fdf6f9;
+}
+
+/* GLOBAL */
+body { font-family: 'DM Sans', sans-serif; color: var(--dark); background: var(--white); }
+a { text-decoration: none; color: inherit; }
+.text-pink { color: var(--pink); }
+.bg-soft { background-color: var(--soft-bg); }
+
+/* NAVBAR */
+.px-nav { background: var(--white); border-bottom: 1px solid #f0e4ea; padding: .9rem 2rem; position: sticky; top: 0; z-index: 100; }
+.brand { font-family: 'DM Serif Display', serif; font-size: 1.25rem; color: var(--dark); letter-spacing: .5px; }
+.nav-links a { font-size: .88rem; font-weight: 600; color: var(--muted); transition: color .2s; }
+.nav-links a:hover { color: var(--pink); }
+
+/* HERO */
+.hero-section { padding: 6rem 0 5rem; background: linear-gradient(135deg, #fff6f9 0%, #f0f6ff 100%); }
+.hero-eyebrow { font-size: .82rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--blue); margin-bottom: .6rem; }
+.hero-title { font-family: 'DM Serif Display', serif; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.15; color: var(--dark); margin-bottom: 1.1rem; }
+.hero-title em { color: var(--blue); font-style: italic; }
+.hero-desc { font-size: .95rem; color: var(--muted); line-height: 1.7; margin-bottom: 2rem; }
+
+/* BUTTONS */
+.btn-hero { background: var(--pink); color: var(--white); border: none; padding: .65rem 1.8rem; border-radius: 50px; font-weight: 600; font-size: .88rem; transition: background .2s, transform .15s; }
+.btn-hero:hover { background: #e05580; color: var(--white); transform: translateY(-2px); }
+.btn-hero-outline { border: 2px solid var(--blue); color: var(--blue); padding: .6rem 1.8rem; border-radius: 50px; font-weight: 600; font-size: .88rem; transition: background .2s, transform .15s; }
+.btn-hero-outline:hover { background: var(--blue-light); transform: translateY(-2px); }
+
+/* SECTION */
+.section-pad { padding: 5rem 0; }
+.section-title { font-family: 'DM Serif Display', serif; font-size: 2rem; color: var(--dark); margin-bottom: .2rem; }
+
+/* SKILL CARD */
+.skill-card { background: var(--white); border: 1px solid #f0e4ea; border-radius: 14px; padding: 1.4rem; height: 100%; transition: box-shadow .2s, transform .2s; }
+.skill-card:hover { box-shadow: 0 8px 24px rgba(240,98,146,.12); transform: translateY(-4px); }
+.skill-icon { font-size: 1.6rem; display: block; margin-bottom: .7rem; color: var(--pink); background: var(--pink-light); width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+.skill-card h6 { font-weight: 700; color: var(--dark); margin-bottom: .3rem; font-size: .95rem; }
+.skill-card p { font-size: .8rem; color: var(--muted); line-height: 1.6; margin: 0; }
+
+/* EXPERIENCE CARD */
+.exp-card { background: var(--white); border: 1px solid #ede8f4; border-radius: 14px; overflow: hidden; transition: box-shadow .2s, transform .2s; }
+.exp-card:hover { box-shadow: 0 8px 24px rgba(74,144,217,.12); transform: translateY(-4px); }
+.exp-img { height: 160px; width: 100%; object-fit: cover; display: block; }
+.exp-card h6 { font-weight: 700; font-size: .95rem; margin: .9rem 1rem .2rem; color: var(--dark); }
+.exp-card p { font-size: .78rem; color: var(--muted); margin: 0 1rem 1rem; }
+
+/* CONTACT */
+.contact-desc { color: var(--muted); font-size: .95rem; margin-bottom: 2rem; }
+
+/* FOOTER */
+footer { background: linear-gradient(135deg, #fff0f5 0%, #f0f6ff 100%); border-top: 1px solid #f0e4ea; padding: 2.5rem 0 2rem; }
+.footer-brand { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--pink); margin-bottom: .5rem; }
+.footer-links a { font-size: .82rem; color: var(--muted); font-weight: 600; transition: color .2s; }
+.footer-links a:hover { color: var(--pink); }
+.footer-copy { font-size: .78rem; color: #bbb; }

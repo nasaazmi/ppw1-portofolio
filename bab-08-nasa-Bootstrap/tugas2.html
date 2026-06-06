@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tugas 2 — Formulir Pendaftaran</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+  <link href="tugas2.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="top-nav">
+  <a class="brand" href="#">nasa azmi</a>
+  <div class="d-none d-md-flex gap-4">
+    <a href="tugas1.html">Beranda</a>
+    <a href="#" class="nav-active">Pendaftaran</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="#">Kontak</a>
+  </div>
+</nav>
+
+<main class="container py-5">
+
+  <!-- Alert Sukses -->
+  <div id="alertSukses" class="alert alert-success alert-dismissible fade show d-none mb-4" role="alert">
+    <strong>✅ Berhasil!</strong> Data pendaftaran mahasiswa telah disimpan.
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+
+  <div class="form-wrap">
+
+    <div class="form-head">
+      <p class="eyebrow">Sekolah Vokasi · UGM</p>
+      <h5>Formulir Pendaftaran Mahasiswa Baru</h5>
+      <p class="sub">Lengkapi seluruh data diri dengan benar dan teliti</p>
+    </div>
+
+    <form id="myForm" class="form-body" novalidate>
+
+      <p class="group-label">Data Diri</p>
+      <div class="row g-3">
+
+        <div class="col-md-6">
+          <label class="form-label">Nama Lengkap <span class="req">*</span></label>
+          <input type="text" class="form-control is-valid" value="NASA AZMI SHOBIR"/>
+          <div class="valid-feedback">Nama terisi dengan benar!</div>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">NIM <span class="req">*</span></label>
+          <input type="text" class="form-control is-invalid" placeholder="25/558088/SV/26283"/>
+          <div class="invalid-feedback">NIM wajib diisi.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" placeholder="nama@mail.ugm.ac.id"/>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Foto Profil</label>
+          <input type="file" class="form-control" accept="image/*"/>
+          <div class="form-text">JPG / PNG · Maks. 2 MB</div>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Program Studi <span class="req">*</span></label>
+          <select class="form-select">
+            <option disabled selected>-- Pilih Program Studi --</option>
+            <option>D4 Teknologi Rekayasa Perangkat Lunak</option>
+            <option>D4 Teknologi Rekayasa Elektro</option>
+            <option>D4 Manajemen Informasi</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Semester <span class="req">*</span></label>
+          <select class="form-select">
+            <option disabled selected>-- Pilih Semester --</option>
+            <option>Semester 1</option><option>Semester 2</option>
+            <option>Semester 3</option><option>Semester 4</option>
+            <option>Semester 5</option><option>Semester 6</option>
+            <option>Semester 7</option><option>Semester 8</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label">Alamat Lengkap</label>
+          <textarea class="form-control" rows="3" placeholder="Jalan, RT/RW, Kelurahan, Kecamatan, Kota..."></textarea>
+        </div>
+
+      </div>
+
+      <hr class="my-4"/>
+
+      <div class="d-flex gap-3">
+        <button type="submit" class="btn-save">Simpan Data</button>
+        <button type="reset" class="btn-reset">Reset</button>
+      </div>
+
+    </form>
+  </div>
+</main>
+
+<footer>
+  <p class="text-center mb-0">© 2025 NASA AZMI SHOBIR · D4 TRPL · Universitas Gadjah Mada</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('myForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('alertSukses').classList.remove('d-none');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
