@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator JavaScript</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS gabungan -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- kalk-page: bikin body jadi flex center khusus halaman kalkulator -->
+<body class="kalk-page">
+
+<div class="kalk-wrapper">
+
+  <!-- Header -->
+  <div class="kalk-header">
+    <span class="kalk-tag">Laporan Praktikum · JavaScript</span>
+    <h1>Kalkulator</h1>
+  </div>
+
+  <!-- Card Kalkulator -->
+  <div class="kalk-card">
+
+    <!-- Display -->
+    <div class="kalk-display">
+      <div class="disp-expr" id="ekspresi"></div>
+      <div class="disp-hasil" id="hasil">0</div>
+    </div>
+
+    <!-- Body -->
+    <div class="kalk-body">
+
+      <!-- Input angka -->
+      <div class="inputs-row">
+        <div class="input-field">
+          <label for="angka1">Angka Pertama</label>
+          <input type="number" id="angka1" placeholder="0" step="any" autocomplete="off">
+        </div>
+        <div class="input-field">
+          <label for="angka2">Angka Kedua</label>
+          <input type="number" id="angka2" placeholder="0" step="any" autocomplete="off">
+        </div>
+      </div>
+
+      <!-- Tombol operasi -->
+      <div class="ops-grid">
+        <button class="btn-op" data-op="tambah" onclick="hitung('tambah')">
+          <span class="sym">+</span>
+          <span class="lbl">Tambah</span>
+        </button>
+        <button class="btn-op" data-op="kurang" onclick="hitung('kurang')">
+          <span class="sym">−</span>
+          <span class="lbl">Kurang</span>
+        </button>
+        <button class="btn-op" data-op="kali" onclick="hitung('kali')">
+          <span class="sym">×</span>
+          <span class="lbl">Kali</span>
+        </button>
+        <button class="btn-op" data-op="bagi" onclick="hitung('bagi')">
+          <span class="sym">÷</span>
+          <span class="lbl">Bagi</span>
+        </button>
+      </div>
+
+      <!-- Pesan error -->
+      <div id="error" class="kalk-error"></div>
+
+      <!-- Tombol reset -->
+      <button class="btn-reset" onclick="resetKalkulator()">Reset</button>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="kalk-footer">Pemrograman Web &mdash; JavaScript</div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript kalkulator -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
